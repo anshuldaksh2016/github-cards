@@ -22,15 +22,24 @@ const Form = props => {
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                value={username}
-                onChange={e => setUserName(e.target.value)}
-                placeholder="Github username"
-            />
-            <button type="submit">Add Card </button>
-        </form>
+        <>
+            <div style={{
+                margin: 'auto',
+                fontSize: 30,
+                color: 'red'
+            }}>
+                Github Cards App
+            </div>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    value={username}
+                    onChange={e => setUserName(e.target.value)}
+                    placeholder="Github username"
+                />
+                <button type="submit">Add Card </button>
+            </form>
+        </>
     )
 }
 
